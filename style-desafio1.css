@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Raleway;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    /*background-color: #040404;*/
+}
+
+.banner {
+    width: 1440px;
+    height: 605px; 
+    background-image: linear-gradient( #000000, #102735, #000000), 
+        url("../trilha-css-desafio-01/assets/images/banner.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+.banner-content {
+    width: 510px;
+    height: 393px;
+
+    /*background-color: #00000033;*/
+    background-color: #1472b7;
+    
+}
+.logo {
+    width: 268px;
+    height: 268px;
+    border-radius: 50%;
+    background-color: #00000033;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.banner button {
+    width: 326px;
+    height: 57px;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 18.78px;
+    letter-spacing: 4px;
+    border: 2px solid;
+    border-color: #1472b7 #33a8db;
+    text-transform: uppercase; 
+    background: #31A8DD;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    
+}
+.banner h1 {
+    width: 434px;
+    height: 47px;
+    background: linear-gradient(#1472b7, #33a8db);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 46.96px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.banner p {
+    width: 510px;
+    height: 46px;
+    word-spacing: -0.3px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 23.48px;    
+}
