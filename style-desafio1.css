@@ -1,83 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    font-family: Raleway;
+*:not(title) {
+    font-family: 'Raleway', sans-serif;
     padding: 0;
     margin: 0;
-    list-style: none;
-    border: 0;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    /*background-color: #040404;*/
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 .banner {
-    width: 1440px;
-    height: 605px; 
-    background-image: linear-gradient( #000000, #102735, #000000), 
+    height: 600px; 
+    border-bottom: 1px solid #33A8DB;
+    padding-top: 60px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)),
         url("../trilha-css-desafio-01/assets/images/banner.png");
     background-repeat: no-repeat; 
+    background-position: center;
     background-size: cover;
-    background-blend-mode: overlay;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
 }
 .banner-content {
-    width: 510px;
-    height: 393px;
-
-    /*background-color: #00000033;*/
-    background-color: #1472b7;
-    
+    color: white;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .logo {
-    width: 268px;
-    height: 268px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     background-color: #00000033;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    margin: auto;
+    padding: 16px;
+    margin-bottom: 16px;
+
     
 }
-.banner button {
-    width: 326px;
-    height: 57px;
-    font-size: 16px;
+button {
+    font-size: 1rem;
     font-weight: 900;
+    padding: 16px 32px;
     line-height: 18.78px;
     letter-spacing: 4px;
-    border: 2px solid;
+    border-radius: 2px;
     border-color: #1472b7 #33a8db;
     text-transform: uppercase; 
-    background: #31A8DD;
+    color: #31A8DD;
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent; 
+    background-color: transparent; 
     
 }
 .banner h1 {
-    width: 434px;
-    height: 47px;
     background: linear-gradient(#1472b7, #33a8db);
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 46.96px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 .banner p {
-    width: 510px;
-    height: 46px;
-    word-spacing: -0.3px;
     font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 1.25rem;
+    margin: 16px 0px 24px;
     line-height: 23.48px;    
 }
+
+section {
+    margin: 100px auto;
+}
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 0.19em;
+    color: #33a8db;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+section p {
+    width: 792px;
+    height: 38px;
+    margin-top: 26px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: center;
+    color: #ffffff;
+}
+#course-content .modules-list {
+    margin: 24px 0;
+}
+#course-content .modules-list .module {
+    width: 530px;
+    margin: 0 auto 24px;
+    white-space: nowrap;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    gap: 10px;
+    padding: 16px;
+    border-radius: 100px;
+    opacity: 0px;
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    box-shadow: -5px 6px 8px 0px #00000066 inset;
+    
+}
+.modules-list span {
+    color: #33a8db;
+}
+#transform-world {
+    height: 560px;
+    background-image: url("../trilha-css-desafio-01/assets/images/woman-code.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-width: 1px, 1px, 1px, 0px solid #33A8DB;
+    padding: 200px;
+}
+
+#transform-world p {
+    width: 244px;
+    height: 141px;
+    gap: 0px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-align: left;
+    background: #FFFFFF;
+    text-transform: lowercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    filter: drop-shadow(3px 2px #33A8DB);
+
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+  }
+  
+  #professional-challenges img {
+    margin: 32px 0;
+  }
+  
+  footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+  }
+  
+  footer .dio-logo {
+    width: 300px;
+  }
+  
+  footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  footer p {
+    color: white;
+  }
